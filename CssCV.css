@@ -5,15 +5,20 @@
   padding: 0;
 }
 body {
-  background: #bebdbd;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(2,0,0,2);
+  width: 1400px;
+  margin: 30px auto;
 }
 header {
   max-width: 100%;
   margin: auto;
   display: flex;
+  justify-content: center;
+  
 }
 .bacground-foto {
-  width: 25%;
+  width: 400px;
   height: 400px;
   background-color: #4C4E50;
   display: flex;
@@ -33,9 +38,12 @@ header {
   width: 80%;
   height: 80%;
 }
+
+/* Navigation */
+
 nav {
-  background-color: #ffffff;
-  width: 1200px;
+  background-color: #f0ffff;
+  width: 1000px;
   height: 400px;
 }
 .container-name { 
@@ -58,10 +66,46 @@ nav {
 }
 .dev {
   font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-letter-spacing: 0.005em;
-color: #157698;
-padding-left: 2px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: 0.005em;
+  color: #157698;
+  padding-left: 2px;
+}
+.contacts ul {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  margin-left: 13%;
+}
+.contacts ul li{
+  width: 350px;
+  padding-top: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 0.03em;
+  color: #333333;
+  text-decoration: none;
+}
+.contacts ul li a:visited {
+  color: #333333;
+}
+.contacts ul li a img {
+  padding-right: 20px;
+}
+.text {
+  position: absolute;
+  padding-top: 10px;
+  color: #333333;
+}
+/* horizont block */
+.horizont {
+  height: 70px;
+  width: 95%;
+  background-color: #157698;
+  margin-left: 70px;
 }
