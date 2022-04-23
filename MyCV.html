@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="CssCV.css">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
   <title>My CV 2022</title>
 </head>
 <body>
@@ -48,13 +49,15 @@
         </div>
       </nav>
   </header>
-  <div class="horizont"></div>
+  <div class="bacground-fon">
+    <div class="horizont"></div>
+  </div>
   <main>
-    <aside>
+    <aside class="block-left">
       <div class="education">
         <h2>EDUCATION</h2>
         <section>
-          <b>BNTU BELARUSIAN NATIONAL TECHNICAL UNIVERSITY</b>
+          <b>BNTU</b>
           <p>&#8212; 2013-2018</p>
           <p>Engineering production</p>
         </section>
@@ -69,12 +72,12 @@
           <p>JavaScript/Front-end</p>
         </section>
       </div>
-      <div>
+      <div class="language">
         <h2>LANGUAGES</h2>
         <P>English - A2 Pre-Intermediate</P>
         <p>Russian - C2 Proficiency</p>
       </div>
-      <div>
+      <div class="code">
         <h2>CODE EXAMPLE</h2>
         <pre><code>function solve(stones) {
 let rgb = stones.split('')
@@ -89,46 +92,43 @@ return res;
 }</code></pre>
       </div>
     </aside>
-    <aside>
-      <div>
-        <h2>ABOUT ME</h2>
-        <P>I am a process engineer. One day I realized that I did not want to devote my life to the enginering profession and I needed to change something, and began to study web programming. I started studying in the winter of 2021. For half a year of independent study, I was able to learn at a basic level: HTML, CSS and JS (basic). I have the skills of self-learning, perseverance, quick search for information and errors, as well as solving non-standard tasks. Ready to learn and teach others in the future</P>
+    <aside class="block-right"> 
+      <div class="correct-block">
+        <div >
+          <h2 class="about-size">ABOUT ME</h2>
+          <P class="about-me">I am a process engineer. One day I realized that I did not want to devote my life to the enginering profession and I needed to change something, and began to study web programming. I started studying in the winter of 2021. For half a year of independent study, I was able to learn at a basic level: HTML, CSS and JS (basic). I have the skills of self-learning, perseverance, quick search for information and errors, as well as solving non-standard tasks. Ready to learn and teach others in the future</P>
+        </div>
+        <div class="block-skills">
+          <h2 class="about-sizetwo">SKILLS</h2>
+          <ul class="skills">
+            <li>HTML<progress value="70" max="100"></progress></li>
+            <li >CSS<progress class="fix" value="70" max="100"></progress></li>
+            <li>JavaScript<progress value="50" max="100"></progress></li>
+            <li >Git<progress class="fixed" value="60" max="100"></progress></li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <h2>SKILLS</h2>
-        <ul>
-          <li>HTML<progress value="70" max="100"></progress></li>
-          <li>CSS<progress value="70" max="100"></progress></li>
-          <li>JavaScript<progress value="50" max="100"></progress></li>
-          <li>Git<progress value="60" max="100"></progress></li>
-        </ul>
-      </div>
-      <div>
+
+      <div class="hobbie-block">
         <h2>HOBBIES</h2>
-        <section id="hobbies">
-          <a href="#">
-            <img src="Vector.png" alt="cycling">
+        <div class="hobbies">
+          <section>
+            <img src="Vector.png" height="50px" alt="cycling">
             <p>Cycling</p>
-          </a>
-        </section>
-        <section>
-          <a href="#">
-            <img src="run.png" alt="run">
+          </section>
+          <section>
+            <img src="run.png" height="50px" alt="run">
             <p>Running</p>
-          </a>
-        </section>
-        <section>
-          <a href="#">
-            <img src="gaming.png" alt="game">
+          </section>
+          <section>
+            <img src="gaming.png" height="50px" alt="game">
             <p>Gaming</p>
-          </a>
-        </section>
-        <section>
-          <a href="#">
-            <img src="travel.png" alt="travel">
+          </section>
+          <section>
+            <img src="travel.png" height="50px" width="45px" alt="travel">
             <p>Travel</p>
-          </a>
-        </section>
+          </section>
+        </div>  
       </div>
     </aside>
   </main>
